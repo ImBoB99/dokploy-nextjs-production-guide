@@ -37,6 +37,7 @@ Place a Dockerfile in the root of your Next.js project. Example Dockerfile can b
 
 - change node:22 to whatever version of node you're using
 - remove lines referencing prisma below the `#PRISMA` comment in Dockerfile if not using Prisma
+- if you do use Prisma, make sure the paths point to the generated Prisma folder in the root if your project, for older Prisma projects this generated Prisma folder may be somewhere else.
 
 ## 3. Add Github Actions Workflow
 
